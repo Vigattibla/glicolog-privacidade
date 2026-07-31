@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GlicoLog — Política de Privacidade</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         max-width: 720px; margin: 0 auto; padding: 24px 20px 64px;
+         line-height: 1.65; font-size: 16px; }
+  h1 { font-size: 26px; margin-bottom: 4px; }
+  h2 { font-size: 19px; margin-top: 36px; border-bottom: 1px solid #8884; padding-bottom: 6px; }
+  .sub { opacity: .65; font-size: 14px; margin-top: 0; }
+  .box { border: 1px solid #8884; border-radius: 8px; padding: 16px; margin: 24px 0; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 15px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #8883; vertical-align: top; }
+  code { background: #8882; padding: 1px 5px; border-radius: 4px; font-size: 14px; }
+  footer { margin-top: 48px; font-size: 13px; opacity: .6; }
+</style>
+</head>
+<body>
+
+<h1>Política de Privacidade — GlicoLog</h1>
+<p class="sub">Última atualização: 30 de julho de 2026</p>
+
+<p>O GlicoLog é um aplicativo de diário pessoal de glicemia. Ele lê medições diretamente
+de um glicosímetro conectado por cabo USB, organiza esses registros e permite gerar
+relatórios para você levar ao seu médico.</p>
+
+<div class="box">
+<strong>O aplicativo não fornece diagnóstico, orientação de tratamento ou cálculo de dose
+de medicamento.</strong> Ele apenas registra e organiza informações. Decisões sobre o seu
+tratamento são do seu médico.
+</div>
+
+<h2>Quais dados são coletados</h2>
+
+<table>
+<tr><th>Dado</th><th>Origem</th><th>Para quê</th></tr>
+<tr><td>Valor da glicemia e data/hora</td><td>Lido do glicosímetro ou digitado por você</td><td>Registro e cálculo das estatísticas</td></tr>
+<tr><td>Contexto da medição (jejum, pós-refeição etc.)</td><td>Marcado por você ou inferido pelo horário</td><td>Organização dos relatórios</td></tr>
+<tr><td>Observações, insulina e carboidratos</td><td>Digitado por você, opcional</td><td>Contexto clínico dos registros</td></tr>
+<tr><td>Nome, tipo de diabetes, nome do médico, metas glicêmicas</td><td>Digitado por você, opcional</td><td>Cabeçalho do relatório em PDF</td></tr>
+<tr><td>Endereço de e-mail</td><td>Sua conta Google, se você optar por vinculá-la</td><td>Identificar sua conta e permitir recuperar os dados em outro aparelho</td></tr>
+</table>
+
+<p><strong>O aplicativo não coleta:</strong> localização, contatos, fotos, microfone,
+câmera, identificador de publicidade, nem dados de uso ou telemetria.</p>
+
+<h2>Onde os dados ficam</h2>
+
+<p>Os registros ficam armazenados de duas formas:</p>
+<ul>
+  <li><strong>No seu aparelho</strong>, em um banco de dados local, para funcionar sem internet.</li>
+  <li><strong>No Google Cloud Firestore</strong>, em uma área isolada e vinculada exclusivamente
+      à sua conta, para que você não perca o histórico ao trocar de celular.</li>
+</ul>
+
+<p>Regras de segurança garantem que apenas a sua própria conta consegue ler ou gravar
+os seus registros. Nenhum outro usuário do aplicativo tem acesso a eles.</p>
+
+<h2>Com quem os dados são compartilhados</h2>
+
+<p><strong>Com ninguém.</strong> Os dados não são vendidos, cedidos, nem utilizados para
+publicidade ou análise de comportamento. Não há anúncios no aplicativo.</p>
+
+<p>O único terceiro envolvido é o <strong>Google</strong>, na qualidade de fornecedor da
+infraestrutura de armazenamento (Firebase) e do serviço de autenticação de conta.</p>
+
+<p>O relatório em PDF e o arquivo CSV são gerados no seu aparelho e só saem dele quando
+você escolhe compartilhá-los.</p>
+
+<h2>Por quanto tempo</h2>
+
+<p>Os dados permanecem enquanto você quiser. Não há exclusão automática. Você pode
+apagar tudo a qualquer momento, conforme descrito abaixo.</p>
+
+<h2 id="exclusao">Como excluir sua conta e seus dados</h2>
+
+<p><strong>Pelo aplicativo:</strong> abra <code>Perfil → Dados e Nuvem → Excluir conta
+permanentemente</code>. Será pedida uma confirmação por escrito. A ação apaga:</p>
+
+<ul>
+  <li>todas as medições armazenadas na nuvem;</li>
+  <li>seus dados de perfil e configurações;</li>
+  <li>o banco de dados local do aparelho;</li>
+  <li>a sua conta de autenticação.</li>
+</ul>
+
+<p>A exclusão é <strong>permanente e não pode ser desfeita</strong>. Antes de confirmar,
+o aplicativo oferece exportar todos os seus registros em CSV.</p>
+
+<p><strong>Sem o aplicativo instalado:</strong> envie um e-mail para o endereço abaixo,
+a partir da conta de e-mail vinculada, solicitando a exclusão. O pedido é atendido em
+até 30 dias.</p>
+
+<p>Cópias em backup do sistema podem persistir por até 7 dias após a exclusão, até
+serem removidas definitivamente pelo ciclo normal de retenção da infraestrutura.</p>
+
+<h2>Seus direitos</h2>
+
+<p>Conforme a Lei Geral de Proteção de Dados (LGPD, Lei 13.709/2018), você pode a
+qualquer momento acessar, corrigir, exportar ou excluir seus dados. As três primeiras
+ações estão disponíveis diretamente no aplicativo; a exclusão também.</p>
+
+<h2>Menores de idade</h2>
+
+<p>O aplicativo é destinado a maiores de 18 anos. Não coletamos intencionalmente dados
+de menores. O uso por adolescentes deve ocorrer sob supervisão de responsável legal.</p>
+
+<h2>Alterações nesta política</h2>
+
+<p>Mudanças relevantes serão publicadas nesta página, com a data de atualização revisada.</p>
+
+<h2>Contato</h2>
+
+<p>Gustavo Crnkovic Vigatti<br>
+E-mail: <a href="mailto:SEU-EMAIL-AQUI">gustavocrnkovicvigatti@gmail.com</a></p>
+
+<footer>
+GlicoLog é um projeto independente. Não possui vínculo, patrocínio ou endosso da
+Roche Diagnostics. Accu-Chek é marca registrada de seus respectivos titulares e é
+mencionada aqui apenas para indicar compatibilidade técnica.
+</footer>
+
+</body>
+</html>
